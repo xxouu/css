@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>半透明边框和多重边框</title>
+</head>
+<style type="text/css">
+	body {
+		background-color: #eee;
+
+	}
+	.box {
+		border: 10px solid hsla(0,0%,100%,.5);
+		background: white;
+		background-clip: padding-box;
+		padding: 30px;
+	}
+	.box2 {
+		background: yellowgreen;
+		color: white;
+		padding: 30px;
+		box-shadow: 0 0 0 10px #655,0 0 0 15px deeppink,0 0 0 20px #fb3,0 2px 5px 25px rgba(0,0,0,.6);
+	}
+	.box3 {
+		padding: 10px;
+		background: yellowgreen;
+		border: 10px solid #655;
+		color: white;
+		outline: 5px solid #655;
+	}
+
+	.box4 {
+		background: #655;
+		padding: 10px;
+		border-radius: 10px;
+		border: 10px solid #655;
+		outline: 1px dashed white;
+		outline-offset: -10px;
+		color: white;
+	}
+	.box5 {
+		background: #655;
+		padding: 10px;
+		border-radius: 10px;
+		border: 10px solid #655;
+		outline: 10px solid yellowgreen;
+		color: white;
+	}
+</style>
+<body>
+	<div class="box">1,半透明边框background-clip: padding-box;</div><br>
+	<div class="box2">2,多重"实线"边框 box-shadow.支持逗号分隔法，可以创建任意数量的投影<br>
+	box-shadow: 0 0 0 10px #655,0 0 0 15px deeppink;</div>
+	<br>
+	<br>
+	<br>
+	<div class="box3">3,顶多双层"可实线可虚线"边框 outline.<br>
+	outline: 5px solid deeppink;</div>
+	<br>
+	<div class="box4">
+		3-1,可通过outline-offset属性来控制它跟元素边缘之间的间距，这个属性可以接受负值<br>
+		例如：缝边效果。<br>
+	</div><br>
+	<div class="box5">
+		but后面才是重点:outline属性不会贴合元素的圆角。
+	</div>
+</body>
+</html>
