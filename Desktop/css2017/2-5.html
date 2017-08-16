@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>条纹背景</title>
+</head>
+<style type="text/css">
+	body {
+		background-color: #eee;
+		color: #fff;
+	}
+	.box {
+		background: linear-gradient(#fb3, #58a);
+		height: 200px;
+		width: 500px;
+	}
+
+	.box1 {
+		background: linear-gradient(#fb3 50%, #58a 50%);
+		height: 200px;
+		width: 500px;
+	}
+	
+	.box2 {
+		background: linear-gradient(#fb3 50%, #58a 50%);
+		background-size: 100% 30px;
+		height: 200px;
+		width: 500px;
+	}
+	
+	.box3 {
+		background: linear-gradient(#fb3 30%, #58a 30%);
+		background-size: 100% 30px;
+		height: 200px;
+		width: 500px;
+	}
+
+	.box4 {
+		background: linear-gradient(#fb3 30%, #58a 0);
+		background-size: 100% 30px;
+		height: 200px;
+		width: 500px;
+	}
+
+	.box5 {
+		background: linear-gradient(red 33.3%, yellow 0, yellow 66.6%, green 0);
+		background-size: 100% 45px;
+		height: 200px;
+		width: 500px;
+	}
+	
+</style>
+<body>
+	<div class="box">background: linear-gradient(#fb3, #58a);</div><br>
+	<div class="box1">background: linear-gradient(#fb3 50%, #58a 50%);</div><br>
+	<div class="box2">background: linear-gradient(#fb3 50%, #58a 50%);<br>background-size: 100% 30px;</div><br>
+	<div class="box3">background: linear-gradient(#fb3 30%, #58a 30%);<br>background-size: 100% 30px;</div><br>
+	<div class="box4">background: linear-gradient(#fb3 30%, #58a 0);<br>background-size: 100% 30px;如果0比30%小，则0位置将置为30%</div><br>
+	<div class="box5">三种颜色条纹,<br>background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);</div><br>
+	
+	
+</body>
+</html>

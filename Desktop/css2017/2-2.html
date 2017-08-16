@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>半透明边框和多重边框</title>
+</head>
+<style type="text/css">
+	body {
+		background-color: #eee;
+		color: #fff;
+
+	}
+	.box {
+		width: 500px;
+		height: 200px;
+		background: url(image/timg.jpeg) no-repeat #58a;
+		background-position: right 20px bottom 10px;
+		padding: 30px;
+		background-size: 30%;
+	}
+	.box2 {
+		width: 500px;
+		height: 200px;
+		background: url(image/timg.jpeg) no-repeat bottom right #58a;
+		background-position: right 20px bottom 10px;
+		background-size: 30%;
+		padding: 30px;
+	}
+	.box3 {
+		width: 500px;
+		height: 200px;
+		padding: 30px;
+		background: url(image/timg.jpeg) no-repeat #58a bottom right;
+		background-origin: content-box;
+		/*background-origin: padding-box;*/
+		background-size: 30%;
+		position: relative;
+	}
+	.box30 {
+		width: 300px;height: 250px;
+		background-color: yellowgreen;
+		padding: 30px;
+	}
+	.box31 {
+		width: 250px;height: 200px;
+		padding: 20px;
+		background-color: #333;
+	}
+	.box32 {
+		background-color: #ddd;
+		width: 200px;height: 120px;
+		padding: 20px;
+	}
+
+	.box4 {
+		width: 400px;
+		height: 300px;
+		background: url(image/timg.jpeg) no-repeat #58a bottom right;
+		background-size: 30%;
+		background-position: calc(100% - 20px) calc(100% - 10px);
+		padding: 10px;
+		border-radius: 10px;
+		border: 10px solid #655;
+		outline: 1px dashed white;
+		outline-offset: -10px;
+		color: white;
+	}
+	.box5 {
+		background: #655;
+		padding: 10px;
+		border-radius: 10px;
+		border: 10px solid #655;
+		outline: 10px solid yellowgreen;
+		color: white;
+	}
+</style>
+<body>
+	<div class="box">1,背景偏移background-position: right 20px bottom 10px;</div><br>
+	<div class="box2">2,回退方案，以便在不支持background-position的浏览器中正常显示<br>
+	background: url(image/timg.jpeg) no-repeat bottom right #58a;
+	</div>
+	<br>
+	<div class="box3">3,偏移量 background-origin: content-box;
+		
+	</div>
+	<div class="box30">border box
+		<div class="box31">padding-box<br>
+			<div class="box32">content-box
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="box4">
+		4,calc()方案，第一个css函数<br>
+		calc(100%<span style="color: red">空格</span> - <span style="color: red">空格</span>20px)<br>
+		不加空格会解析错误
+	</div><br>
+	
+</body>
+</html>

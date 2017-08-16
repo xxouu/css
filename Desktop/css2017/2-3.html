@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边框内圆角</title>
+</head>
+<style type="text/css">
+	body {
+		background-color: #eee;
+		color: #fff;
+	}
+	.box {
+		background: #655;
+		padding: .8em;
+	}
+	.box > div {
+		background: tan;
+		border-radius: .8em;
+		padding: 1em;
+	}
+
+	.box1 {
+		background: tan;
+		border-radius: 5px;
+		padding: 20px;
+		/*box-shadow: 0 0 0 10px #655;*/
+		outline: 5px solid #655;
+	}
+
+	.box2 {
+		background: tan;
+		border-radius: 5px;
+		padding: 20px;
+		box-shadow: 0 0 0 10px #655;
+		outline: 5px solid #655;
+	}
+	
+</style>
+<body>
+	<div class="box">
+		<div>内圆角,用了两个div实现</div>
+	</div><br>
+
+	<div class="box1">
+		内圆角,用了一个div实现，outline:5px solid #655;内圆角空隙无法填充
+	</div><br>
+	
+	<div class="box2">
+		内圆角,用了一个div实现,box-shadow: 0 0 0 10px #655;内外兼圆，填补空隙
+	</div><br>
+	
+</body>
+</html>
