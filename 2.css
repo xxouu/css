@@ -1,0 +1,530 @@
+body
+{
+    background-color: #eee;
+}
+.container
+{
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl
+{
+    float: left;
+}
+.fr
+{
+    float: right;
+}
+.hide
+{
+    display: none;
+}
+.clear
+{
+    clear: both;
+}
+.menu
+{
+    width: 300px;
+}
+.menu li
+{
+    line-height: 40px;
+
+    padding-top: 10px;
+}
+
+.content_box
+{
+    /*margin-top: 50px;*/
+}
+
+.box
+{
+    padding: 50px;
+
+    background-color: pink;
+}
+.box1
+{
+    padding: 30px;
+
+    border: 30px solid hsla(0,0%,100%,.5);
+    background: white;
+    background-clip: padding-box;
+}
+.box2
+{
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 40px;
+
+    color: white;
+    background: yellowgreen;
+    box-shadow: 0 0 0 10px #655,0 0 0 20px #ccc,0 0 0 30px pink,0 2px 5px 35px rgba(0,0,0,.3);
+}
+.box3
+{
+    padding: 10px;
+
+    color: white;
+    border: 10px solid #655;
+    outline: 5px solid #655;
+    background: yellowgreen;
+}
+
+.box4
+{
+    margin-top: 70px;
+    margin-left: -40px;
+    padding: 10px;
+
+    color: white;
+    border: 10px solid #655;
+    border-radius: 10px;
+    outline: 1px dashed white;
+    outline-offset: -10px;
+    background: #655;
+}
+.box5
+{
+    margin-top: 50px;
+    margin-left: -40px;
+    padding: 10px;
+
+    color: white;
+    border: 10px solid #655;
+    border-radius: 10px;
+    outline: 10px solid yellowgreen;
+    background: #655;
+}
+
+
+
+.box3_1
+{
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+
+    background: url(../image/timg.jpeg) no-repeat #ccc;
+    background-position: right 20px bottom 10px;
+    background-size: 30%;
+}
+.box3_2
+{
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+
+    background: url(../image/timg.jpeg) no-repeat bottom right #ccc;
+    background-position: right 20px bottom 10px;
+    background-size: 30%;
+}
+.box3_3
+{
+    position: relative;
+
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+
+    background: url(../image/timg.jpeg) no-repeat #ccc bottom right;
+    background-origin: content-box;
+    /*background-origin: padding-box;*/
+    background-size: 30%;
+}
+.box3_30
+{
+    width: 300px;
+    height: 250px;
+    padding: 30px;
+
+    background-color: yellowgreen;
+}
+.box3_31
+{
+    width: 250px;
+    height: 200px;
+    padding: 20px;
+
+    background-color: #333;
+}
+.box3_32
+{
+    width: 200px;
+    height: 120px;
+    padding: 20px;
+
+    background-color: #ddd;
+}
+
+.box3_4
+{
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+
+    color: white;
+    border: 10px solid #655;
+    border-radius: 10px;
+    outline: 1px dashed white;
+    outline-offset: -10px;
+    background: url(../image/timg.jpeg) no-repeat #ccc bottom right;
+    background-position: calc(100% - 20px) calc(100% - 10px);
+    background-size: 30%;
+}
+
+
+.box4_
+{
+    padding: .8em;
+
+    background: #655;
+}
+.box4_ > div
+{
+    padding: 1em;
+
+    border-radius: .8em;
+    background: tan;
+}
+
+.box4_1
+{
+    padding: 20px;
+
+    border-radius: 5px;
+    /*box-shadow: 0 0 0 10px #655;*/
+    outline: 5px solid #655;
+    background: tan;
+}
+
+.box4_2
+{
+    padding: 20px;
+
+    border-radius: 5px;
+    outline: 5px solid #655;
+    background: tan;
+    box-shadow: 0 0 0 10px #655;
+}
+
+
+.box5_
+{
+    width: 500px;
+    height: 200px;
+
+    background: linear-gradient(#fb3, #58a);
+}
+
+.box5_1
+{
+    width: 500px;
+    height: 200px;
+
+    background: linear-gradient(#fb3 50%, #58a 50%);
+}
+
+.box5_2
+{
+    width: 500px;
+    height: 100px;
+
+    border: solid 1px red;
+    background: linear-gradient(#fb3 50%, #58a 50%);
+    background-repeat: no-repeat;
+    background-size: 100% 30px;
+}
+
+.box5_3
+{
+    width: 500px;
+    height: 200px;
+
+    background: linear-gradient(#fb3 30%, #58a 30%);
+    background-size: 100% 30px;
+}
+
+.box5_4
+{
+    width: 500px;
+    height: 200px;
+
+    background: linear-gradient(#fb3 30%, #58a 0);
+    background-size: 100% 30px;
+}
+
+.box5_5
+{
+    width: 500px;
+    height: 200px;
+
+    background: linear-gradient(red 33.3%, yellow 0, yellow 66.6%, green 0);
+    background-size: 100% 45px;
+}
+
+
+.box5_L
+{
+    width: 500px;
+    height: 200px;
+
+    background: linear-gradient(to right, #fb3 50%, #58a 0);
+    background-size: 30px 100%;
+}
+
+.box5_L1
+{
+    width: 200px;
+    height: 200px;
+
+    background: linear-gradient(45deg, #fb3 50%, #58a 0);
+    background-size: 30px 30px;
+}
+
+
+.box5_L2
+{
+    width: 200px;
+    height: 200px;
+
+    background: linear-gradient(45deg,
+    #fb3 25%, #58a 0, #58a 50%,
+    #fb3 0, #fb3 75%, #58a 0);
+    background-size: 42px 42px;
+}
+
+.box5_L3
+{
+    width: 200px;
+    height: 200px;
+
+    background: repeating-linear-gradient(45deg,
+    #fb3, #58a 30px);
+    background-size: 42px 42px;
+}
+
+.box5_L4
+{
+    width: 200px;
+    height: 200px;
+
+    background: repeating-linear-gradient(45deg,
+    #fb3, #fb3 15px, #58a 0, #58a 30px);
+    background-size: 42px 42px;
+}
+
+.box_T
+{
+    width: 400px;
+    height: 200px;
+
+    background: linear-gradient(red 1px, transparent 0), linear-gradient(90deg, red 1px, transparent 100%);
+    background-size: 30px 30px;
+}
+
+.box_T0
+{
+    width: 400px;
+    height: 200px;
+
+    background: linear-gradient(135deg, #eceddc 25%, transparent 25%) -50px 0, linear-gradient(225deg, #eceddc 25%, transparent 25%) -50px 0, linear-gradient(315deg, #eceddc 25%, transparent 25%), linear-gradient(45deg, #eceddc 25%, transparent 25%);
+    background-color: #ec173a;
+    background-size: 50px 50px;
+}
+
+.box_T1
+{
+    width: 400px;
+    height: 200px;
+
+    background: linear-gradient(135deg, #eceddc 25%, transparent 25%) -50px 0, linear-gradient(225deg, #eceddc 25%, transparent 25%) -50px 0, linear-gradient(315deg, #eceddc 25%, transparent 25%), linear-gradient(45deg, #eceddc 25%, transparent 25%);
+    background-color: #ec173a;
+    background-size: 100px 100px;
+}
+
+.box_T2
+{
+    width: 400px;
+    height: 200px;
+
+    background-color: silver;
+    background-image: radial-gradient(circle at 100% 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 0 150%, silver 24%, white 25%, white 28%, silver 29%, silver 36%, white 36%, white 40%, transparent 40%, transparent), radial-gradient(circle at 50% 100%, white 10%, silver 11%, silver 23%, white 24%, white 30%, silver 31%, silver 43%, white 44%, white 50%, silver 51%, silver 63%, white 64%, white 71%, transparent 71%, transparent), radial-gradient(circle at 100% 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent), radial-gradient(circle at 0 50%, white 5%, silver 6%, silver 15%, white 16%, white 20%, silver 21%, silver 30%, white 31%, white 35%, silver 36%, silver 45%, white 46%, white 49%, transparent 50%, transparent);
+    background-size: 100px 50px;
+}
+
+.box_T3
+{
+    width: 400px;
+    height: 200px;
+
+    background-color: #001;
+    background-image: radial-gradient(white 15%, transparent 16%), radial-gradient(white 15%, transparent 16%);
+    background-position: 0 0, 30px 30px;
+    background-size: 60px 60px;
+}
+
+.box_T4
+{
+    width: 400px;
+    height: 200px;
+
+    background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+}
+
+.box_T5
+{
+    width: 400px;
+    height: 200px;
+
+    background: radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187, 0, 51, 0) 27%), radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187, 0, 51, 0) 27%), radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221, 51, 85, 0) 46%), radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221, 51, 85, 0) 46%), radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221, 51, 85, 0) 31%), radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187, 0, 51, 0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187, 0, 51, 0) 27%) 50px 50px, radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221, 51, 85, 0) 46%) 50px 50px, radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221, 51, 85, 0) 46%) 50px 50px, radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221, 51, 85, 0) 31%) 50px 50px;
+    background-color: #b03;
+    background-size: 100px 100px;
+}
+
+.box_T6
+{
+    width: 400px;
+    height: 200px;
+
+    background: radial-gradient(circle at 50% 59%, #d2caab 3%, #364e27 4%, #364e27 11%,
+    rgba(54, 78, 39, 0) 12%, rgba(54, 78, 39, 0)) 50px 0,
+    radial-gradient(circle at 50% 41%, #364e27 3%, #d2caab 4%, #d2caab 11%,
+    rgba(210, 202, 171, 0) 12%, rgba(210, 202, 171, 0)) 50px 0,
+    radial-gradient(circle at 50% 59%, #d2caab 3%, #364e27 4%, #364e27 11%,
+    rgba(54, 78, 39, 0) 12%, rgba(54, 78, 39, 0)) 0 50px,
+    radial-gradient(circle at 50% 41%, #364e27 3%, #d2caab 4%, #d2caab 11%,
+    rgba(210, 202, 171, 0) 12%, rgba(210, 202, 171, 0)) 0 50px,
+    radial-gradient(circle at 100% 50%, #d2caab 16%, rgba(210, 202, 171, 0) 17%),
+    radial-gradient(circle at 0% 50%, #364e27 16%, rgba(54, 78, 39, 0) 17%),
+    radial-gradient(circle at 100% 50%, #d2caab 16%, rgba(210, 202, 171, 0) 17%) 50px 50px,
+    radial-gradient(circle at 0% 50%, #364e27 16%, rgba(54, 78, 39, 0) 17%) 50px 50px;
+    background-color: #63773f;
+    background-size: 100px 100px;
+}
+
+.box_T7
+{
+    width: 400px;
+    height: 200px;
+
+    background: linear-gradient(324deg, #232927 4%,   transparent 4%) -70px 43px,
+    linear-gradient( 36deg, #232927 4%,   transparent 4%) 30px 43px,
+    linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 30px 43px,
+    linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -70px 43px,
+    linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -70px 23px,
+    linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 30px 23px,
+
+    linear-gradient(324deg, #232927 4%,   transparent 4%) -20px 93px,
+    linear-gradient( 36deg, #232927 4%,   transparent 4%) 80px 93px,
+    linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 80px 93px,
+    linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -20px 93px,
+    linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
+    linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
+    background-color: #232927;
+    background-size: 100px 100px;
+}
+.box_T8
+{
+    width: 400px;
+    height: 200px;
+    background-color: #6d695c;
+    background-image: repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+    linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+    linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+    background-size: 70px 120px;
+}
+
+.box_T9
+{
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(#fff 50%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #fff 53%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #fff 50%, rgba(255,255,255,0) 0) 55px 0 #48b;
+    background-repeat: repeat-x;
+    background-size: 110px 200px;
+}
+
+.box_T10
+{
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+    linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+    linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+    background-size: 25px 25px;
+}
+
+
+
+.box_7 {
+	height: 100px;
+	width: 400px;
+	background: hsl(20, 40%, 90%); 
+	background-image: linear-gradient(90deg, #fb3 11px, transparent 0),
+					    linear-gradient(90deg, #ab4 23px, transparent 0),
+					    linear-gradient(90deg, #655 41px, transparent 0);
+	background-size: 41px 100%, 61px 100%, 83px 100%;
+}
+
+.something-meaningful { background: url(../image/a.jpg); background-size: cover; padding: 1em;
+}
+.something-meaningful > div { background: white; padding: 1em;
+}
+
+.box_71 {
+	margin-top:30px;
+	padding: 1em;
+	border: 1em solid transparent; background:
+    linear-gradient(rgba(255,255,255,0), white) padding-box,
+    url(../image/a.jpg) border-box 0 / cover;
+}
+
+.box_72 {
+	padding: 1em;
+border: 1em solid transparent;
+background: linear-gradient(white, white) padding-box,
+            repeating-linear-gradient(-45deg,
+              red 0, red 12.5%,
+              transparent 0, transparent 25%,
+              #58a 0, #58a 37.5%,
+              transparent 0, transparent 50%)
+0 / 5em 5em;
+}
+
+.box_73 {
+	padding: 1em;
+border: 16px solid transparent;
+border-image: 16 repeating-linear-gradient(-45deg,
+                   red 0, red 1em,
+                   transparent 0, transparent 2em,
+                   #58a 0, #58a 3em,
+                   transparent 0, transparent 4em);
+}
+	@keyframes ants { to { background-position: 100% } }
+.box_74 { padding: 1em;
+border: 1px solid transparent; background:
+        linear-gradient(white, white) padding-box,
+        repeating-linear-gradient(-45deg,
+          black 0, black 25%, white 0, white 50%
+        ) 0 / .6em .6em;
+animation: ants 12s linear infinite; }
+
+
+.box_75 {
+border-top: .2em solid transparent; border-image: 100% 0 0 linear-gradient(90deg,
+currentColor 4em,
+transparent 0);
+padding-top: 1em;
+margin-top: 30px;
+
+}
+
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>半透明边框和多重边框</title>
+</head>
+<link href="2.css" rel="stylesheet">
+<style type="text/css">
+
+</style>
+
+<body>
+    <div class="container">
+        <header role="banner" aria-labelledby="ibm-pagetitle-h1">
+            <h1>css揭秘</h1>
+        </header>
+        <h2>第二章：背景与边框</h2>
+        <div id="content">
+            <div class="fl">
+                <ul class="menu">
+                    <li>1半透明边框</li>
+                    <li>2多重边框</li>
+                    <li>3灵活的背景定位</li>
+                    <li>4边框内圆角</li>
+                    <li>5条纹背景</li>
+                    <li>6复杂的背景图案</li>
+                    <li>7伪随机背景</li>
+                    <li>8连续的图像边框</li>
+                </ul>
+            </div>
+            <div class="fl content_box">
+                <a>
+                    <div class="box">
+                        <div class="box1">
+                            <h2>半透明边框:</h2>
+                            <p>padding: 30px;</p>
+                            <p>border: 30px solid hsla(0,0%,100%,.5);</p>
+                            <p>background-clip: padding-box;</p>
+                            <p>background-color: white;</p>
+                        </div>
+                    </div>
+                </a>
+                <a class="hide">
+                    <h2>多重边框</h2>
+                    <div class="box2">
+                        box-shadow可以创建多个投影
+                    </div>
+                    <div class="box4">
+                        outline可制作双层可实线可虚线的边框<br> 可通过outline-offset属性控制跟元素边缘之间的间距，可以接受负值
+                        <br> 例如：缝边效果。
+                    </div>
+                    <div class="box5">
+                        but后面才是重点:outline属性不会贴合元素的圆角。
+                    </div>
+                </a>
+                <a class="hide">
+                    <div class="box3_1">1,背景偏移background-position: right 20px bottom 10px;</div><br>
+                    <div class="box3_2">2,回退方案，以便在不支持background-position的浏览器中正常显示<br> background: url(image/timg.jpeg) no-repeat bottom right
+                        #58a;
+                    </div>
+                    <br>
+                    <div class="box3_3">3,偏移量 background-origin: content-box;
+
+                    </div>
+                    <div class="box3_30">border box
+                        <div class="box3_31">padding-box<br>
+                            <div class="box3_32">content-box
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="box3_4">
+                        4,calc()方案，第一个css函数<br> calc(100%
+                        <span style="color: red">空格</span> - <span style="color: red">空格</span>20px)<br> 不加空格会解析错误
+                    </div><br>
+                </a>
+                <a class="hide">
+                    <div class="box4_">
+                        <div>内圆角,用了两个div实现</div>
+                    </div><br>
+
+                    <div class="box4_1">
+                        内圆角,用了一个div实现，outline:5px solid #655;内圆角空隙无法填充
+                    </div><br>
+
+                    <div class="box4_2">
+                        内圆角,用了一个div实现,box-shadow: 0 0 0 10px #655;内外兼圆，填补空隙
+                    </div><br>
+                </a>
+                <a class="hide">
+                    <div class="box5_">background: linear-gradient(#fb3, #58a);</div><br>
+                    <div class="box5_1">background: linear-gradient(#fb3 50%, #58a 50%);</div><br>
+                    <div class="box5_2">background: linear-gradient(#fb3 50%, #58a 50%);<br>background-size: 100% 30px;</div><br>
+                    <div class="box5_3">background: linear-gradient(#fb3 30%, #58a 30%);<br>background-size: 100% 30px;</div><br>
+                    <div class="box5_4">background: linear-gradient(#fb3 30%, #58a 0);<br>background-size: 100% 30px;如果0比30%小，则0位置将置为30%</div><br>
+                    <div class="box5_5">三种颜色条纹,<br>background: linear-gradient(#fb3 33.3%, #58a 0, #58a 66.6%, yellowgreen 0);</div><br>
+
+                    <div class="box5_L">background: linear-gradient(to right, #fb3 50%, #58a 0);</div><br>
+                    <div class="box5_L1">background: linear-gradient(45deg, #fb3 50%, #58a 0);</div><br>
+                    <div class="box5_L2">background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);</div><br>
+                    <div class="box5_L3">background: repeating-linear-gradient(45deg, #fb3, #58a 30px);</div>
+                    <br>
+                    <div class="box5_L4">重复多个</div>
+
+                    
+                </a>
+                <a class="hide">
+                    <div style="color: red">多重背景网址http://lea.verou.me/css3patterns/</div>
+                    <div class="box_T"></div>
+                    <br>
+                    <div class="box_T0"></div>
+                    <br>
+                    <div class="box_T1"></div>
+                    <br>
+                    <div class="box_T2"></div>
+                    <br>
+                    <div class="box_T3"></div>
+                    <br>
+                    <div class="box_T4"></div>
+                    <br>
+                    <div class="box_T5"></div>
+                    <br>
+                    <div class="box_T6"></div>
+                    <br>
+                    <div class="box_T7"></div>
+                    <br>
+                    <div class="box_T8"></div>
+                    <br>
+                    <div class="box_T9"></div>
+                    <br>
+                    <div class="box_T10"></div>
+                </a>
+                <a class="hide">
+                    <div class="box_7">
+                    </div>
+                   
+
+                </a>
+                <a class="hide">
+                 <h2>把一张图片应用为边框</h2>
+                	<div class="something-meaningful">
+                    	<div> I have a nice stone art border, don't I look pretty?<br>
+                    	用了两个div实现这个效果。<br>外部background-size: cover; padding: 1em;<br>内部背景白色<br>高度<br>高度<br>高度<br>
+						</div>
+					</div>
+                    <div class="box_71">只用一个div<br>设置1em的透明border<br>设置背景渐变白->白，背景图片<br>background-size: cover;<br>background-clip: padding-box, border-box;<br>background-origin: border-box;<br>高度<br>
+                    </div>
+                    <p>background-clip:border-box	背景被裁剪到边框盒。<br>background-clip:padding-box	背景被裁剪到内边距框。<br>background-clip:content-box	背景被裁剪到内容框。<br>background-size:cover.把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。<br>
+                    background-size:contain.把图像图像扩展至最大尺寸，以使其宽度和高度完全适应内容区域。<br>
+
+					</p>
+                    <h2>信封效果1</h2>
+					<div class="box_72"></div>
+					<h2>信封效果2</h2>
+					<div class="box_73"></div>
+					<h2>信封效果2</h2>
+					<div class="box_74"></div>
+					<div class="box_75">头顶上有根长线</div>
+                </a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        window.onload = function () {
+            var oTab = document.getElementById('content');
+            var aLi = oTab.getElementsByTagName('li');
+            var oTabBox = oTab.getElementsByTagName('div')[1];
+            var aBox = oTabBox.getElementsByTagName('a');
+
+            for (var i = 0; i < aLi.length; i++) {
+                aLi[i].index = i;
+                aLi[i].onclick = function () {
+                    for (var j = 0; j < aLi.length; j++) {
+                        aLi[j].className = ''; //取消菜单样式
+                        aBox[j].className = 'hide'; //隐藏所有的tabDiv
+                    }
+                    aLi[this.index].className = 'selected';
+                    aBox[this.index].className = '';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
